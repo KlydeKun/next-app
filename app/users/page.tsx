@@ -13,7 +13,7 @@ const UsersPage = async ({ searchParams: { sortOrder } }: Props) => {
       <Link href="/users/new" className="btn">
         New User
       </Link>
-      <Suspense fallback={<p>Loading...</p>}>
+      <Suspense>
         <UserTable sortOrder={sortOrder} />
       </Suspense>
     </>
